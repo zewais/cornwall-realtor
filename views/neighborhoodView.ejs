@@ -6,15 +6,25 @@
     <title><%= neighborhood %></title>
   </head>
   <body>
+    <nav>
+      <a href="/"><img src="/images/cornwall-realtor-logo.jpg" alt="" width="50px"></a>
+        <a href="/downtown">Downtown</a>
+        <a href="/northend">Northend</a>
+        <a href="/eastend">Eastend</a>
+        <a href="/riverdale">Riverdale</a>
+    </nav>
     <h1>Welcome to <%= neighborhood %></h1>
     <form action=<%= `/${neighborhood}` %>>
       <button name="sort" value="ascendingly">Sort Price Ascendingly</button>
       <button name="sort" value="descendingly">Sort Price Descendingly</button>
     </form>
+    <br>
     <% for(let i = 0; i<list.length; i++) { %>
+        <img src= <%=list[i].image %> alt="" width="100px">
         <p><strong><%= list[i].address %></strong></p>
         <p>Price: <%= list[i].price %> </p>
         <a href=<%= `/${neighborhood}/${list[i].id}` %>>Visit listing</a>
+        <hr>
     <% } %>
   </body>
 </html>

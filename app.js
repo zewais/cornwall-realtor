@@ -16,11 +16,18 @@ app.get("/downtown", (request, response) => {
   const { sort } = request.query;
 
   if (sort === "ascendingly") {
-    listingsDowntown.sort((a, b) => a.price - b.price);
+    listingsDowntown.sort(
+      (a, b) =>
+        Number(a.price.replace(/[^0-9]/gm, "")) -
+        Number(b.price.replace(/[^0-9]/gm, ""))
+    );
   } else if (sort === "descendingly") {
-    listingsDowntown.sort((a, b) => b.price - a.price);
+    listingsDowntown.sort(
+      (a, b) =>
+        Number(b.price.replace(/[^0-9]/gm, "")) -
+        Number(a.price.replace(/[^0-9]/gm, ""))
+    );
   }
-  console.log(listingsDowntown[0].price);
   response.render("neighborhoodView", {
     list: listingsDowntown,
     neighborhood: "Downtown",
@@ -28,29 +35,98 @@ app.get("/downtown", (request, response) => {
 });
 
 app.get("/northend", (request, response) => {
-  response.render("neighborhoodView", { listings, neighborhood: "Northend" });
+  const listingsNorthend = listings.northend;
+  const { sort } = request.query;
+
+  if (sort === "ascendingly") {
+    listingsNorthend.sort(
+      (a, b) =>
+        Number(a.price.replace(/[^0-9]/gm, "")) -
+        Number(b.price.replace(/[^0-9]/gm, ""))
+    );
+  } else if (sort === "descendingly") {
+    listingsNorthend.sort(
+      (a, b) =>
+        Number(b.price.replace(/[^0-9]/gm, "")) -
+        Number(a.price.replace(/[^0-9]/gm, ""))
+    );
+  }
+  response.render("neighborhoodView", {
+    list: listingsNorthend,
+    neighborhood: "Northend",
+  });
 });
 
 app.get("/eastend", (request, response) => {
-  response.render("neighborhoodView", { listings, neighborhood: "Eastend" });
+  const listingsEastend = listings.eastend;
+  const { sort } = request.query;
+
+  if (sort === "ascendingly") {
+    listingsEastend.sort(
+      (a, b) =>
+        Number(a.price.replace(/[^0-9]/gm, "")) -
+        Number(b.price.replace(/[^0-9]/gm, ""))
+    );
+  } else if (sort === "descendingly") {
+    listingsEastend.sort(
+      (a, b) =>
+        Number(b.price.replace(/[^0-9]/gm, "")) -
+        Number(a.price.replace(/[^0-9]/gm, ""))
+    );
+  }
+  response.render("neighborhoodView", {
+    list: listingsEastend,
+    neighborhood: "Eastend",
+  });
 });
 
 app.get("/riverdale", (request, response) => {
-  response.render("neighborhoodView", { listings, neighborhood: "Riverdale" });
+  const listingsRiverdale = listings.riverdale;
+  const { sort } = request.query;
+
+  if (sort === "ascendingly") {
+    listingsRiverdale.sort(
+      (a, b) =>
+        Number(a.price.replace(/[^0-9]/gm, "")) -
+        Number(b.price.replace(/[^0-9]/gm, ""))
+    );
+  } else if (sort === "descendingly") {
+    listingsRiverdale.sort(
+      (a, b) =>
+        Number(b.price.replace(/[^0-9]/gm, "")) -
+        Number(a.price.replace(/[^0-9]/gm, ""))
+    );
+  }
+  response.render("neighborhoodView", {
+    list: listingsRiverdale,
+    neighborhood: "Riverdale",
+  });
 });
 
 app.get("/downtown/:id", (request, response) => {
-  response.send("downtown");
+  const { id } = request.params;
+  const listing = listings.downtown.find((list) => list.id == id);
+  console.log(listing);
+  response.render("listingView", { listing });
 });
 
 app.get("/northend/:id", (request, response) => {
-  response.send("downtown");
+  const { id } = request.params;
+  const listing = listings.northend.find((list) => list.id == id);
+  console.log(listing);
+  response.render("listingView", { listing });
 });
 
 app.get("/eastend/:id", (request, response) => {
-  response.send("downtown");
+  const { id } = request.params;
+  const listing = listings.eastend.find((list) => list.id == id);
+  console.log(listing);
+  response.render("listingView", { listing });
 });
 
 app.get("/riverdale/:id", (request, response) => {
-  response.send("downtown");
+  const { id } = request.params;
+  const listing = listings.riverdale.find((list) => list.id == id);
+  console.log(listing);
+  response.render("listingView", { listing });
 });

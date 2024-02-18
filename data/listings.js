@@ -8,7 +8,7 @@ const listings = {
       address: "321 Water Street",
       postalCode: "K6J 1A5",
       MLSnumber: "1328809",
-      photo: "../img/10100.jpg",
+      image: "/images/10100.jpg",
       description:
         "This condo may be the perfect fit for you. Located in a highly sought after building, this unit has many brag worthy features. Starting with the building itself, recent improvements include: new roof, windows, and plumbing. The interior of the unit features a spacious layout, and offers scenic views of Lamoureux Park & the St. Lawrence River, which can be enjoyed from your own private balcony. This condo offers 2 spacious bedrooms and 2 bathrooms, including a master bedroom with ensuite, complete with walk-in closet. The galley style kitchen has been tastefully upgraded with granite counter tops, white cabinetry, and an undermount sink. In addition to all this, an indoor parking space, and a storage locker are also included. Don't miss out on this one. Call to book a private viewing today.",
       propertySummary: {
@@ -37,7 +37,7 @@ const listings = {
       address: "129 First Street West",
       postalCode: "K6J 3P5",
       MLSnumber: "1326947",
-      photo: "../img/10200.jpg",
+      image: "/images/10200.jpg",
       description:
         "Here's great income potential, upwards of $2000+/mth. This 3 brm home offers the perfect blend of historical character and modern convenience. Spacious kitchen and updated laminate floors throughout. This easy flow layout is functional and efficient for everyday living. It's conveniently located near a variety of amenities such as shopping and bistros. The local park is also nearby providing a great place to spend time outdoors.",
       propertySummary: {
@@ -66,7 +66,7 @@ const listings = {
       address: "35 Second Street East",
       postalCode: "K6H 1Y2",
       MLSnumber: "1322346",
-      photo: "../img/10300.jpg",
+      image: "/images/10300.jpg",
       description:
         "4100 Sq.Ft. that the owner converted to beautifully finished 4 bedroom home w/open concept main floor living room,Kitchen w/island, dining area & 3pc bath with main level laundry. The 2nd floor residence features a family room w/access to a private patio, 4 bedrooms & 2 full baths & includes a spacious master bedroom w/walk-in closet & ensuite.",
       propertySummary: {
@@ -99,7 +99,7 @@ const listings = {
       address: "402 Pitt Street",
       postalCode: "K6J 3R2",
       MLSnumber: "1323223",
-      photo: "../img/10400.jpg",
+      image: "/images/10400.jpg",
       description:
         "This large heritage home is located in the heart of downtown and has several interesting features. Historically a Dr.'s residence, it has a contained office within and a separate entrance off Fourth St. CBD zoning allows for several uses. Ideal for your entrepreneurial concept, or use the entire house as a home. ",
       propertySummary: {
@@ -130,7 +130,7 @@ const listings = {
       address: "4 LeFebvre Street",
       postalCode: "K6H 5G4",
       MLSnumber: "1326657",
-      photo: "../img/20100.jpg",
+      image: "/images/20100.jpg",
       description:
         "This home has had extensive updates including all those big tickets items. This 2 bedroom home features one full bath and laundry on the main floor. The eat in kitchen has plenty of cupboards. Make your way through this home and notice all those brand new windows. In the living room you will enjoy the view of the St Lawrence right from your couch. ",
       propertySummary: {
@@ -159,7 +159,7 @@ const listings = {
       address: "252 Gillis Street",
       postalCode: "K6J 7N2",
       MLSnumber: "1315922",
-      photo: "../img/20200.jpg",
+      image: "/images/20200.jpg",
       description:
         "Modern and stylish 2 +1 bedroom bungalow in the desirable East Ridge subdivision. Beautiful investment property or plan to move in this spring! Nicely finished custom cabinetry with crown mouldings and working island. Quartz counters in kitchen and bathroom. Spacious open concept layout. Two main floor bedrooms.",
       propertySummary: {
@@ -188,7 +188,7 @@ const listings = {
       address: "573 Lynwood Drive",
       postalCode: "K6H 5W7",
       MLSnumber: "1329543",
-      photo: "../img/20300.jpg",
+      image: "/images/20300.jpg",
       description:
         "his home is ideal for a growing family! Located in a great residential area, with 2000+ sq ft of living space and a deck overlooking the large backyard. This 4-level split provides several main floor living areas, with a formal living, dining room, eat-in area & a large, bright family room warmed by a wood-burning fireplace. Upstairs, 3 good sized bedrooms are serviced by a 4 pcs bathroom, with the primary bedroom having its private 2 pcs.",
       propertySummary: {
@@ -217,7 +217,7 @@ const listings = {
       address: "401 Anderson Street",
       postalCode: "K6H 5N4",
       MLSnumber: "1328253",
-      photo: "../img/20400.jpg",
+      image: "/images/20400.jpg",
       description:
         "BEAUTIFUL BRICK BUNGALOW LOCATED IN THE EAST END OF CORNWALL FACING EAST ALSO FEATURES A 2 + 2 BEDROOM, POSSIBLE 3 BEDROOMS IN THE BASEMENT, POSSIBILITY OF AN IN LAW SUITE/ APARTMENT. 2 FULL BATHROOMS, LARGE BRIGHT LIVING ROOM WITH GAS FIREPLACE & BAY WINDOW. ",
       propertySummary: {
@@ -248,7 +248,7 @@ const listings = {
       address: "124 Heritage Place",
       postalCode: "K6J 5V5",
       MLSnumber: "1330147",
-      photo: "../img/30100.jpg",
+      image: "/images/30100.jpg",
       description:
         "Extremely well maintained 3 bedroom and 2 bathroom home with over 1500 sq/ft of living space located in a family oriented neighborhood and near all amenities. A beautiful kitchen with plenty of cupboard space, open concept living and dining area with a gas fireplace. ",
       propertySummary: {
@@ -277,7 +277,7 @@ const listings = {
       address: "108 Hemlock crescent",
       postalCode: "K6H 7L7",
       MLSnumber: "1323791",
-      photo: "../img/30200.jpg",
+      image: "/images/30200.jpg",
       description:
         "Bright and spacious 2 bedroom semi in a desirable location. This north end semi detached home features beautiful finishings and recent updates. Step into the roomy living area boasting high ceilings and hardwood flooring. Foyer leading to attached single car garage with exterior access to the yard.",
       propertySummary: {
@@ -306,7 +306,7 @@ const listings = {
       address: "3223 Northdale Drive",
       postalCode: "K6K 0A5",
       MLSnumber: "1327364",
-      photo: "../img/30300.jpg",
+      image: "/images/30300.jpg",
       description:
         "Welcome to this 2015 2 bedroom Menard built semi detached in the North End. Open concept Kitchen, dining and livingroom with hardwood and ceramic floors. 2 bedroom on the main floor, 4 piece bathroom, large foyer, fully fenced yard, shed and unspoiled basement ready to finish.",
       propertySummary: {
@@ -335,7 +335,7 @@ const listings = {
       address: "3130 Ross Street",
       postalCode: "K6K 1E7",
       MLSnumber: "1328254",
-      photo: "../img/30400.jpg",
+      image: "/images/30400.jpg",
       description:
         "Great location with home set on a large lot with fenced in rear yard. The home has had many upgrades as the pictures show. Garage and two out buildings.",
       propertySummary: {
@@ -366,7 +366,7 @@ const listings = {
       address: "918 Second Street",
       postalCode: "K6J 1H9",
       MLSnumber: "1319080",
-      photo: "../img/40100.jpg",
+      image: "/images/40100.jpg",
       description:
         "Be impressed with spacious 4 bedroom home in Riverdale, with numerous updates blending today with the original character. Covered front veranda, large foyer with gorgeous solid wood staircase to the second level. Large formal livingroom and formal diningroom with classy wooden built-ins that bring the character of this classic home to a fully renovated kitchen with an abundance of cabinets, working space and a nice day to day dining room.",
       propertySummary: {
@@ -395,7 +395,7 @@ const listings = {
       address: "1016 Oak Crescent",
       postalCode: "K6J 2N1",
       MLSnumber: "1327402",
-      photo: "../img/40200.jpg",
+      image: "/images/40200.jpg",
       description:
         "Modern and stylish 2 +1 bedroom bungalow in the desirable East Ridge subdivision. Beautiful investment property or plan to move in this spring! Nicely finished custom cabinetry with crown mouldings and working island. Quartz counters in kitchen and bathroom. Spacious open concept layout. Two main floor bedrooms.",
       propertySummary: {
@@ -424,7 +424,7 @@ const listings = {
       address: "513 Joyce Street",
       postalCode: "K6J 1Y1",
       MLSnumber: "1329879",
-      photo: "../img/40300.jpg",
+      image: "/images/40300.jpg",
       description:
         "Check out this all brick family home in Riverdale, located right beside a school. On the main floor you'll find an eat-in kitchen, living room, full bathroom, a large master bedroom and another bedroom. Downstairs has a nice family room with a gas fireplace, 2 more bedrooms, laundry room and a 2pcs bathroom.",
       propertySummary: {
@@ -453,7 +453,7 @@ const listings = {
       address: "1208 Innwood Avenue",
       postalCode: "K6J 5V2",
       MLSnumber: "1301028",
-      photo: "../img/40400.jpg",
+      image: "/images/40400.jpg",
       description:
         "This spacious 2187sq.ft. one owner custom home complete with a huge 22’ x 24’ attached double garage is situated in one of the City’s most prestigious neighbourhoods! An impeccable 3+1 bedroom fully finished family home with beautiful features such as gleaming hardwood flooring throughout, 3 full bathrooms including a 5pc ensuite off the master, an open concept layout, a super cool 4 season sunroom/den which provides access to the private deck zone, a main floor laundry room, a fully finished basement with the ultimate games room and so much more.",
       propertySummary: {
