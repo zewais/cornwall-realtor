@@ -106,27 +106,23 @@ app.get("/riverdale", (request, response) => {
 app.get("/downtown/:id", (request, response) => {
   const { id } = request.params;
   const listing = listings.downtown.find((list) => list.id == id);
-  console.log(listing);
   response.render("listingView", { listing });
 });
 
 app.get("/northend/:id", (request, response) => {
   const { id } = request.params;
   const listing = listings.northend.find((list) => list.id == id);
-  console.log(listing);
   response.render("listingView", { listing });
 });
 
 app.get("/eastend/:id", (request, response) => {
   const { id } = request.params;
   const listing = listings.eastend.find((list) => list.id == id);
-  console.log(listing);
   response.render("listingView", { listing });
 });
 
 app.get("/riverdale/:id", (request, response) => {
   const { id } = request.params;
   const listing = listings.riverdale.find((list) => list.id == id);
-  console.log(listing);
   response.render("listingView", { listing });
 });
