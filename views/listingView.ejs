@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= listing.id %></title>
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="/images/cornwall-realtor-logo.jpg" alt="" width="50px"></a>
+        <a href="/downtown">Downtown</a>
+        <a href="/northend">Northend</a>
+        <a href="/eastend">Eastend</a>
+        <a href="/riverdale">Riverdale</a>
+    </nav>
+    <br>
+    <img src= <%= listing.image %> alt="" width="400px">
+    <!-- <img src= "/images/10100.jpg" alt="" width="100px"> -->
+    <h1><%= listing.address %></h1>
+    <p><strong>Price: <%= listing.price %></strong></p>
+    <h2>Details</h2>
+    <ul>
+        <li>Postal Code: <%= listing.postalCode %></li>
+        <li>MLS: <%= listing.MLSnumber %></li>
+        <li>Description: <%= listing.description %></li>
+    </ul>
+    <h3>Property Summary</h3>
+    <ul>
+        <% const {propertySummary} = listing  %>
+        <% for(let i = 0; i<Object.keys(propertySummary).length; i++) { %>
+            <li><%= Object.keys(propertySummary)[i] %>: <%= propertySummary[Object.keys(propertySummary)[i]] %></li>
+        <% } %>
+    </ul>
+    <h3>Building Summary</h3>
+    <ul>
+        <% const {buildingSummary} = listing  %>
+        <% for(let i = 0; i<Object.keys(buildingSummary).length; i++) { %>
+            <li><%= Object.keys(buildingSummary)[i] %>: <%= buildingSummary[Object.keys(buildingSummary)[i]] %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
